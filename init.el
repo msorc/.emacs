@@ -16,6 +16,9 @@
 (setq my-packages
       '(maxframe 
 	org-mode 
+
+	; file system
+	sunrise-commander
 	; programming
 	flymake-ruby
 
