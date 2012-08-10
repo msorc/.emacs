@@ -15,14 +15,28 @@
 (setq my-packages
       '(maxframe 
 	org-mode 
-
 	; file system
 	sunrise-commander
-	; programming
-	flymake-ruby
-
+	;; programming
+	; html & css
+	css-mode 
+	nxhtml
+	; javascript
+	js2-mode
+	; lisp
 	slime
-	rinari rdebug ruby-mode rvm))
+	; scheme
+	sicp
+	; ruby
+	Enhanced-Ruby-Mode flymake-ruby 
+	rdebug 
+	rvm
+	; rails
+	haml-mode sass-mode
+	rinari
+	; yaml
+	yaml-mode
+	))
       
 (el-get 'sync my-packages)
 
