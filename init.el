@@ -1,4 +1,7 @@
-(add-to-list 'load-path "~/.emacs.d/el-get/packages/el-get")
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+
+; Packages initialization files
+(setq el-get-user-package-directory "~/.emacs.d/init-packages")
 
 (unless (require 'el-get nil t)
   (url-retrieve
@@ -8,10 +11,6 @@
        (goto-char (point-max))
        (eval-print-last-sexp)))))
 
-; Path where packages are installed
-(setq el-get-dir "~/.emacs.d/el-get/packages")
-; Packages initialization files
-(setq el-get-user-package-directory "~/.emacs.d/init-packages")
 ; Packages
 (setq my-packages
       '(maxframe 
