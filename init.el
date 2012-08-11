@@ -1,43 +1,6 @@
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
-
-; Packages initialization files
-(setq el-get-user-package-directory "~/.emacs.d/init-packages")
-
-(unless (require 'el-get nil t)
-  (url-retrieve
-   "https://raw.github.com/dimitri/el-get/master/el-get-install.el"
-   (lambda (s)
-     (let (el-get-master-branch)
-       (goto-char (point-max))
-       (eval-print-last-sexp)))))
-
-; Packages
-(setq my-packages
-      '(maxframe 
-	org-mode 
-	; file system
-	sunrise-commander
-	;; programming
-	; html & css
-	css-mode 
-	nxhtml
-	; javascript
-	js2-mode
-	; lisp
-	slime
-	; scheme
-	sicp
-	; ruby
-	Enhanced-Ruby-Mode flymake-ruby 
-	rdebug 
-	rvm
-	; rails
-	haml-mode sass-mode
-	rinari
-	; yaml
-	yaml-mode
-	))
-      
-(el-get 'sync my-packages)
-
+; some temporary hacks
+(load "~/.emacs.d/init-pre-hacks")
+; init el-get and packages
+(load "~/.emacs.d/init-el-get")
+; config editor behavior
 (load "~/.emacs.d/init-editor")
