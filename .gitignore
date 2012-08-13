@@ -1,6 +1,7 @@
 auto-save-list
 el-get
 eshell
+ac-comphist.dat
 *.elc
 *~
 \#*#
