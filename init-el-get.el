@@ -26,6 +26,8 @@
 	; html & css
 	css-mode 
 	nxhtml
+	; git
+	magit
 	; javascript
 	js2-mode
 	; lisp
