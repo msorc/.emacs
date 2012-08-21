@@ -23,6 +23,8 @@
 	; file system
 	sunrise-commander
 	;; programming
+	; coffescript
+	coffee-mode
 	; html & css
 	css-mode 
 	nxhtml
