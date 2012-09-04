@@ -43,6 +43,8 @@
 	; rails
 	haml-mode sass-mode
 	rinari
+	; cucumber
+	feature-mode
 	; yaml
 	yaml-mode
 	))
