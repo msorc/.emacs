@@ -41,7 +41,7 @@
 	rdebug 
 	rvm
 	; rails
-	haml-mode sass-mode
+	haml-mode sass-mode rhtml-mode
 	rinari
 	; cucumber
 	feature-mode
