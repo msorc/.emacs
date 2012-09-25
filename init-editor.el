@@ -5,9 +5,6 @@
 ; the entered characters in the given sequence will match.
 (setq ido-enable-flex-matching t)
 
-;; don't use tabs
-(setq-default indent-tabs-mode nil)
-
 ;; editor configs
 (setq make-backup-files nil)
 (setq query-replace-highlight t)
@@ -16,6 +13,8 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq require-final-newline t)
 (setq major-mode 'text-mode)
+; don't use tabs
+(setq-default indent-tabs-mode nil)
 
 ;; turn on paren matching
 (show-paren-mode t)
@@ -88,3 +87,30 @@
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
 
+;; comment code
+;; toggle comment
+;;; allow-line-as-region-for-function adds an "-or-line" version of
+;;; the given comment function which (un)comments the current line is
+;;; the mark is not active.  This code comes from Aquamac's osxkeys.el
+;;; and is licensed under the GPL
+(defmacro allow-line-as-region-for-function (orig-function)
+`(defun ,(intern (concat (symbol-name orig-function) "-or-line"))
+   ()
+   ,(format "Like `%s', but acts on the current line if mark is not active." orig-function)
+   (interactive)
+   (if mark-active
+       (call-interactively (function ,orig-function))
+     (save-excursion
+       ;; define a region (temporarily) -- so any C-u prefixes etc. are preserved.
+       (beginning-of-line)
+       (set-mark (point))
+       (end-of-line)
+       (call-interactively (function ,orig-function))))))
+
+(defun define-toggle-comment-line ()
+  "Add or-line (un)comment function if not already defined"
+  (unless (fboundp 'comment-or-uncomment-region-or-line)
+    (allow-line-as-region-for-function comment-or-uncomment-region)))
+
+(define-toggle-comment-line)
+(global-set-key (kbd "C-c C-k") 'comment-or-uncomment-region-or-line)
