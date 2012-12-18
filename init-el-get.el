@@ -16,13 +16,17 @@
       '(maxframe 
 	org-mode 
 	; text editing
+        autopair
 	; text navigation
 	ace-jump-mode
 	; autocomplete
 	auto-complete auto-complete-extension auto-complete-emacs-lisp auto-complete-etags auto-complete-css auto-complete-ruby
 	; file system
 	sunrise-commander
+        ;; interface
+        kpm-list
 	;; programming
+        ;ctags
 	; coffescript
 	coffee-mode
 	; html & css
@@ -33,15 +37,16 @@
 	; javascript
 	js2-mode
 	; lisp
-	slime
+	paredit slime
 	; scheme
 	sicp
 	; ruby
-	Enhanced-Ruby-Mode flymake-ruby 
-	rdebug 
+	Enhanced-Ruby-Mode flymake-ruby ruby-block ruby-end ruby-electric
+	rdebug
+        rspec-mode
 	rvm
 	; rails
-	haml-mode sass-mode rhtml-mode
+	rhtml-mode haml-mode sass-mode
 	rinari
 	; cucumber
 	feature-mode
