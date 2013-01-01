@@ -26,32 +26,21 @@
         ;; interface
         kpm-list
 	;; programming
-        ;ctags
-	; coffescript
-	coffee-mode
-	; html & css
-	css-mode 
-	nxhtml
-	; git
-	magit
-	; javascript
-	js2-mode
-	; lisp
-	paredit slime
-	; scheme
-	sicp
+        projectile      ; project organising
+	coffee-mode 	; coffescript
+	css-mode nxhtml ; html & css
+	magit           ; git
+	js2-mode        ; javascript
+	paredit slime 	; lisp
+	sicp            ; scheme
 	; ruby
 	Enhanced-Ruby-Mode flymake-ruby ruby-block ruby-end ruby-electric
-	rdebug
-        rspec-mode
+	rdebug rspec-mode
 	rvm
 	; rails
-	rhtml-mode haml-mode sass-mode
-	rinari
-	; cucumber
-	feature-mode
-	; yaml
-	yaml-mode
+        rinari rhtml-mode haml-mode sass-mode
+	feature-mode 	; cucumber
+	yaml-mode 	; yaml
 	))
       
 (el-get 'sync my-packages)
