@@ -1,6 +1,12 @@
 ;; Interactively Do Things
 (require 'ido)
 (ido-mode t)
+
+;; winner-mode
+; Ctrl+c ←  - will restore the previous window configuration
+; Ctrl+c →  - will redo the configuration you just destroyed
+(winner-mode 1)
+
 ; if the entered string does not match any buffer name, any buffer name containing
 ; the entered characters in the given sequence will match.
 (setq ido-enable-flex-matching t)
