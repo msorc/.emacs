@@ -25,6 +25,8 @@
 	sunrise-commander
         ;; interface
         kpm-list
+        ;; design
+        graphviz-dot-mode
 	;; programming
         projectile      ; project organising
 	coffee-mode 	; coffescript
