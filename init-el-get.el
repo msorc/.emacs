@@ -19,6 +19,8 @@
         autopair
 	; text navigation
 	ace-jump-mode
+        ; undo/redo history
+        undo-tree
 	; autocomplete
 	auto-complete auto-complete-extension auto-complete-emacs-lisp auto-complete-etags auto-complete-css auto-complete-ruby
 	; file system

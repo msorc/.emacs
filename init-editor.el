@@ -26,6 +26,9 @@
 (show-paren-mode t)
 (setq show-paren-style 'mixed)
 
+;; hints for incomplete emacs commands
+(setq icomplete-mode t)
+
 ;; Get rid of the startup screen
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message nil)
