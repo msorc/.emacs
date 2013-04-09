@@ -2,6 +2,7 @@ auto-save-list
 el-get
 eshell
 ac-comphist.dat
+tramp
 url
 *.cache
 *.elc
