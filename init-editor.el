@@ -123,3 +123,7 @@
 
 (define-toggle-comment-line)
 (global-set-key (kbd "C-c C-k") 'comment-or-uncomment-region-or-line)
+
+;; Delete all spaces and tabs around the point, leaving just one space
+;; (or N spaces if you supply N as a prefix argument like C-4 C-c j)
+(global-set-key (kbd "C-c j") 'just-one-space)
