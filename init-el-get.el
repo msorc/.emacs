@@ -37,8 +37,11 @@
 	js2-mode        ; javascript
 	paredit slime 	; lisp
 	sicp            ; scheme
+        ;lua
+        lua-mode flymake-lua
 	; ruby
-	Enhanced-Ruby-Mode flymake-ruby ruby-block ruby-end ruby-electric
+	Enhanced-Ruby-Mode ;flymake-ruby 
+        ruby-block ruby-end ruby-electric
 	rdebug rspec-mode
 	rvm
 	; rails
