@@ -8,3 +8,4 @@ url
 *.elc
 *~
 \#*#
+session*
