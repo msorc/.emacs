@@ -45,7 +45,7 @@
 	rdebug rspec-mode
 	rvm
 	; rails
-        rinari rhtml-mode haml-mode sass-mode slim-mode
+        rinari rhtml-mode haml-mode sass-mode ;slim-mode
 	feature-mode 	; cucumber
 	yaml-mode 	; yaml
 	))

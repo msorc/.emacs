@@ -91,6 +91,13 @@
 ;    (color-theme-initialize)
 ;    (color-theme-arjen)
 
+;; font
+(set-face-attribute 'default nil
+                    :family "Monospace"
+                    :height 90
+                    :weight 'normal
+                    :width 'normal)
+
 ;; move between buffers
 ;; allows to move point from window to window using Shift + arrow keys.
 (when (fboundp 'windmove-default-keybindings)
