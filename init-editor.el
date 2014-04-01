@@ -66,8 +66,8 @@
 (set-foreground-color "white")
 
 ;; modeline
-(set-face-background 'modeline "DarkRed")
-(set-face-foreground 'modeline "white")
+;; (set-face-background 'modeline "DarkRed")
+;; (set-face-foreground 'modeline "white")
 ;; (set-face-foreground 'mode-line "blue4")
 ;; (set-face-background 'mode-line "#808080")
 ;; (set-face-attribute 'mode-line nil :font "Tahoma")
