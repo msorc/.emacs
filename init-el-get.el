@@ -19,8 +19,13 @@
         autopair
 	; text navigation
 	ace-jump-mode
+        ido-vertical-mode
+        ido-hacks
+        ido-ubiquitous
         ; undo/redo history
         undo-tree
+        ; languages
+        lojban lojban-mode
 	; autocomplete
 	auto-complete auto-complete-extension auto-complete-emacs-lisp auto-complete-etags auto-complete-css auto-complete-ruby
 	; file system
@@ -37,15 +42,15 @@
 	js2-mode        ; javascript
 	paredit slime 	; lisp
 	sicp            ; scheme
-        ;lua
-        lua-mode flymake-lua
+        cmake
 	; ruby
 	Enhanced-Ruby-Mode ;flymake-ruby 
         ruby-block ruby-end ruby-electric
 	rdebug rspec-mode
 	rvm
 	; rails
-        rinari rhtml-mode haml-mode sass-mode ;slim-mode
+        ;rinari 
+        rhtml-mode haml-mode sass-mode ;slim-mode
 	feature-mode 	; cucumber
 	yaml-mode 	; yaml
 	))
