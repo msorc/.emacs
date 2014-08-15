@@ -42,7 +42,7 @@
 	js2-mode        ; javascript
 	paredit slime 	; lisp
 	sicp            ; scheme
-        cmake
+        cmake-mode
 	; ruby
 	Enhanced-Ruby-Mode ;flymake-ruby 
         ruby-block ruby-end ruby-electric
