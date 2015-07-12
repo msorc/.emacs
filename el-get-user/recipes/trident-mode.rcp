@@ -1,0 +1,7 @@
+(:name trident-mode
+       :type github
+       :website "https://github.com/johnmastro/trident-mode.el"
+       :description "Live Parenscript interaction"
+       :depends (slime skewer-mode dash)
+       :pkgname "johnmastro/trident-mode.el"
+)
