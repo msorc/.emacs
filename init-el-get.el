@@ -15,7 +15,7 @@
 ; Packages
 (setq my-packages
       '(maxframe 
-	org-mode 
+	; org-mode 
 	; text editing
         autopair
 	; text navigation
@@ -25,10 +25,8 @@
         ido-ubiquitous
         ; undo/redo history
         undo-tree
-        ; languages
-        lojban lojban-mode
 	; autocomplete
-	auto-complete auto-complete-extension auto-complete-emacs-lisp auto-complete-etags auto-complete-css auto-complete-ruby
+	; auto-complete auto-complete-extension ; auto-complete-css auto-complete-ruby
 	; file system
 	sunrise-commander
         ;; interface
@@ -37,25 +35,29 @@
         graphviz-dot-mode
 	;; programming
         projectile      ; project organising
-	coffee-mode 	; coffescript
-        livescript-mode ; livescript
-	css-mode ;nxhtml ; html & css
+	; css-mode ;nxhtml ; html & css
 	magit           ; git
 	js2-mode        ; javascript
-	paredit slime 	; lisp
+        typescript-mode ; ts
+	paredit ;slime 	; lisp
 	sicp            ; scheme
-        skewer-mode trident-mode ; js live
+        skewer-mode ; trident-mode ; js live
         cmake-mode
 	; ruby
-	Enhanced-Ruby-Mode ;flymake-ruby 
+	enh-ruby-mode ;flymake-ruby 
         ruby-block ruby-end ruby-electric
-	ruby-debug rspec-mode
+	rspec-mode
 	rvm
+        ; clojure
+        cider
+        ;; clojure-cheatsheet
 	; rails
         ;rinari 
         rhtml-mode haml-mode sass-mode slim-mode
 	feature-mode 	; cucumber
 	yaml-mode 	; yaml
+        ;; rainbow
+        rainbow-delimiters rainbow-identifiers
 	))
       
 (el-get 'sync my-packages)
