@@ -21,6 +21,7 @@
 	; org-mode 
 	; text editing
         autopair
+        reverse-im
 	; text navigation
 	ace-jump-mode
         ido-vertical-mode
@@ -43,14 +44,19 @@
 	js2-mode        ; javascript
         typescript-mode ; ts
 	paredit ;slime 	; lisp
+        lispy
+        smartparens
+        parinfer
 	sicp            ; scheme
         skewer-mode ; trident-mode ; js live
         cmake-mode
+        ; perl
+        perl6-mode
 	; ruby
 	enh-ruby-mode ;flymake-ruby 
         ruby-block ruby-end ruby-electric
 	rspec-mode
-	rvm
+	rbenv
         ; clojure
         cider
         ;; clojure-cheatsheet
@@ -58,9 +64,15 @@
         ;rinari 
         rhtml-mode haml-mode sass-mode slim-mode
 	feature-mode 	; cucumber
-	yaml-mode 	; yaml
+	yaml-mod
+e 	; yaml
         ;; rainbow
         rainbow-delimiters rainbow-identifiers
+        ;; system
+        e2ansi
+        ; rust
+        rust-mode rust-racer flymake-rust 
+        rust-playground
 	))
       
 (el-get 'sync my-packages)

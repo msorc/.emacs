@@ -26,7 +26,7 @@
  '(delete-selection-mode nil)
  '(graphviz-dot-view-command "xdot %s")
  '(org-startup-truncated nil)
- '(package-selected-packages (quote (clojure-cheatsheet queue)))
+ '(package-selected-packages (quote (e2ansi reverse-im clojure-cheatsheet queue)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -35,5 +35,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Source Code Pro" :foundry "ADBO" :slant normal :weight normal :height 120 :width normal)))))
-(put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
