@@ -21,7 +21,7 @@
 	; org-mode 
 	; text editing
         autopair
-        reverse-im
+        ; reverse-im
 	; text navigation
 	ace-jump-mode
         ido-vertical-mode
@@ -46,7 +46,7 @@
 	paredit ;slime 	; lisp
         lispy
         smartparens
-        parinfer
+;        parinfer
 	sicp            ; scheme
         skewer-mode ; trident-mode ; js live
         cmake-mode
@@ -64,15 +64,12 @@
         ;rinari 
         rhtml-mode haml-mode sass-mode slim-mode
 	feature-mode 	; cucumber
-	yaml-mod
-e 	; yaml
-        ;; rainbow
-        rainbow-delimiters rainbow-identifiers
+	yaml-mode 	; yaml
         ;; system
-        e2ansi
+;        e2ansi
         ; rust
-        rust-mode rust-racer flymake-rust 
-        rust-playground
+        ;rust-mode rust-racer ; flymake-rust 
+        ;rust-playground
 	))
       
 (el-get 'sync my-packages)
@@ -224,7 +221,7 @@ e 	; yaml
 (global-set-key (kbd "C-c j") 'just-one-space)
 
 ;; rainbow delimeters
-(add-hook 'prog-mode-hook 'rainbow-delimiters-mode 'rainbow-identifiers-mode)
+;(add-hook 'prog-mode-hook 'rainbow-delimiters-mode 'rainbow-identifiers-mode)
 #+END_SRC
 * Prospectives
 ** Configs to follow
