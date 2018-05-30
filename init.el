@@ -11,7 +11,6 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-(load "~/.emacs.d/init-pre-hacks")
 ; init el-get and packages
 ;; (load "~/.emacs.d/init-el-get")
 ; config editor behavior
