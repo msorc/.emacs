@@ -1,6 +1,6 @@
 ;;
-(load-file "~/.emacs.d/org-dotemacs.el")
-(org-dotemacs-load-file "" "~/.emacs.d/dotemacs.org")
+;(load-file "~/.emacs.d/org-dotemacs.el")
+;(org-dotemacs-load-file "" "~/.emacs.d/dotemacs.org")
 
 ; some temporary hacks
 
@@ -12,9 +12,9 @@
 (package-initialize)
 
 ; init el-get and packages
-;; (load "~/.emacs.d/init-el-get")
+(load "~/.emacs.d/init-el-get")
 ; config editor behavior
-;; (load "~/.emacs.d/init-editor")
+(load "~/.emacs.d/init-editor")
 
 
 (custom-set-variables
