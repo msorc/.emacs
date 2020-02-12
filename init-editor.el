@@ -122,17 +122,5 @@
        (end-of-line)
        (call-interactively (function ,orig-function))))))
 
-(defun define-toggle-comment-line ()
-  "Add or-line (un)comment function if not already defined"
-  (unless (fboundp 'comment-or-uncomment-region-or-line)
-    (allow-line-as-region-for-function comment-or-uncomment-region)))
-
-(define-toggle-comment-line)
-(global-set-key (kbd "C-c C-k") 'comment-or-uncomment-region-or-line)
-
-;; Delete all spaces and tabs around the point, leaving just one space
-;; (or N spaces if you supply N as a prefix argument like C-4 C-c j)
-(global-set-key (kbd "C-c j") 'just-one-space)
-
 ;; rainbow delimeters
-(add-hook 'prog-mode-hook 'rainbow-delimiters-mode 'rainbow-identifiers-mode)
+;; (add-hook 'prog-mode-hook 'rainbow-delimiters-mode 'rainbow-identifiers-mode)

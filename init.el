@@ -25,7 +25,9 @@
  '(delete-selection-mode nil)
  '(graphviz-dot-view-command "xdot %s")
  '(org-startup-truncated nil)
- '(package-selected-packages (quote (e2ansi reverse-im clojure-cheatsheet queue)))
+ '(package-selected-packages
+   (quote
+    (company haxe-mode e2ansi reverse-im clojure-cheatsheet queue)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces

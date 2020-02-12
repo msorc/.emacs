@@ -1,0 +1,10 @@
+(define-key dumb-jump-mode-map (kbd "M-g o") 'dumb-jump-go-other-window)
+(define-key dumb-jump-mode-map (kbd "M-g j") 'dumb-jump-go)
+(define-key dumb-jump-mode-map (kbd "M-g i") 'dumb-jump-go-prompt)
+(define-key dumb-jump-mode-map (kbd "M-g x") 'dumb-jump-go-prefer-external)
+(define-key dumb-jump-mode-map (kbd "M-g z") 'dumb-jump-go-prefer-external-other-window)
+(define-key dumb-jump-mode-map (kbd "M-g b") 'dumb-jump-back)
+
+(setq dumb-jump-force-searcher 'ag)
+;; (setq dumb-jump-selector 'ivy)
+;; (setq dumb-jump-selector 'helm)
