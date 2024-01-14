@@ -8,3 +8,4 @@
 (setq dumb-jump-force-searcher 'ag)
 ;; (setq dumb-jump-selector 'ivy)
 ;; (setq dumb-jump-selector 'helm)
+(dumb-jump-mode)

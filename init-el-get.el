@@ -16,9 +16,12 @@
 ; Packages
 (setq my-packages
       '(maxframe 
+        ; env
+        exec-path-from-shell
 	; org-mode 
 	; text editing
         autopair
+        markdown-mode
 	; text navigation
 	ace-jump-mode
         ido-vertical-mode
@@ -28,6 +31,7 @@
         undo-tree
 	; autocomplete
 	; auto-complete auto-complete-extension ; auto-complete-css auto-complete-ruby
+        company-mode
 	; file system
 	sunrise-commander
         ;; lsp
@@ -37,30 +41,30 @@
         ;; design
         graphviz-dot-mode
 	;; programming
+        dumb-jump
         projectile      ; project organising
 	; css-mode ;nxhtml ; html & css
 	magit           ; git
 	js2-mode        ; javascript
-        haxe-mode
         typescript-mode ; ts
 	paredit ;slime 	; lisp
 	sicp            ; scheme
         skewer-mode ; trident-mode ; js live
         cmake-mode
+        ; fsharp
+        fsharp-mode
+        ; d
+;        d-mode
+        ; haskell
+        haskell-mode
 	; ruby
 	enh-ruby-mode ;flymake-ruby 
         ruby-block ruby-end ruby-electric
 	rspec-mode
 	rvm
-        ; clojure
-        cider
-        ;; clojure-cheatsheet
-        ; haskell
-        ; ghc
-        ; ghc-mode
-        ; ghci-completion
-        ;; haskell-mode
 	; rails
+        ; scheme
+        geiser
         ;rinari 
         rhtml-mode haml-mode sass-mode slim-mode
 	feature-mode 	; cucumber

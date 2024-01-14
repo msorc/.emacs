@@ -28,6 +28,8 @@
 ;; hints for incomplete emacs commands
 (setq icomplete-mode t)
 
+(setq column-number-mode t)
+
 ;; Get rid of the startup screen
 (setq inhibit-startup-screen t)
 (setq initial-scratch-message nil)
@@ -40,6 +42,9 @@
   (tool-bar-mode -1)
   (menu-bar-mode)
   (scroll-bar-mode -1))
+
+;; desktop
+(desktop-save-mode t)
 
 ;; Centering code stolen from somewhere and restolen from
 ;; http://www.chrislott.org/geek/emacs/dotemacs.html
@@ -102,6 +107,9 @@
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
 
+;; no bell sound
+(setq ring-bell-function 'ignore)
+
 ;; comment code
 ;; toggle comment
 ;;; allow-line-as-region-for-function adds an "-or-line" version of
@@ -124,3 +132,6 @@
 
 ;; rainbow delimeters
 ;; (add-hook 'prog-mode-hook 'rainbow-delimiters-mode 'rainbow-identifiers-mode)
+
+;; init PATH and other VARS
+(exec-path-from-shell-initialize)

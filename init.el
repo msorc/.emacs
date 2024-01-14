@@ -13,6 +13,10 @@
 
 ; init el-get and packages
 (load "~/.emacs.d/init-el-get")
+
+; some custom packages load
+(load "~/.emacs.d/init-custom-packages")
+
 ; config editor behavior
 (load "~/.emacs.d/init-editor")
 
@@ -24,10 +28,11 @@
  ;; If there is more than one, they won't work right.
  '(delete-selection-mode nil)
  '(graphviz-dot-view-command "xdot %s")
+ '(haskell-mode-hook
+   '(turn-on-haskell-indentation turn-on-haskell-doc-mode interactive-haskell-mode) t)
  '(org-startup-truncated nil)
  '(package-selected-packages
-   (quote
-    (company haxe-mode e2ansi reverse-im clojure-cheatsheet queue)))
+   '(dylan d-mode hyperbole company haxe-mode e2ansi reverse-im clojure-cheatsheet queue))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -35,6 +40,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Source Code Pro" :foundry "ADBO" :slant normal :weight normal :height 120 :width normal)))))
+ '(default ((t (:family "Source Code Pro" :foundry "ADBO" :slant normal :weight normal :height 102 :width normal))))
+ '(cursor ((t (:background "gainsboro" :foreground "blue")))))
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
+;; ## added by OPAM user-setup for emacs / base ## 56ab50dc8996d2bb95e7856a6eddb17b ## you can edit, but keep this line
+(require 'opam-user-setup "~/.emacs.d/opam-user-setup.el")
+;; ## end of OPAM user-setup addition for emacs / base ## keep this line
