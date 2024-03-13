@@ -1,9 +1,18 @@
-;; Interactively Do Things
-(require 'ido)
-(ido-mode t)
-; if the entered string does not match any buffer name, any buffer name containing
-; the entered characters in the given sequence will match.
-(setq ido-enable-flex-matching t)
+
+;;  ____________________________________________________________________________
+;;; MINIBUFFER COMPLETION
+;; <https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Icomplete>
+
+(require 'icomplete)
+
+(setq icomplete-in-buffer t
+      icomplete-compute-delay 0.1
+      icomplete-delay-completions-threshold 10000
+      icomplete-show-matches-on-no-input t
+      icomplete-hide-common-prefix nil)
+
+;; vertical completion with fido-vertical
+(fido-vertical-mode 1)
 
 ;; winner-mode
 ; Ctrl+c ←  - will restore the previous window configuration

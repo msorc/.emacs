@@ -51,12 +51,14 @@
 	sicp            ; scheme
         skewer-mode ; trident-mode ; js live
         cmake-mode
-        ; fsharp
-        fsharp-mode
+        ;; ; fsharp
+        ;; fsharp-mode
+        ; ocaml
+        ocaml-ts-mode
+        ; go
+        ;go-ts-mode
         ; d
-;        d-mode
-        ; haskell
-        haskell-mode
+        d-mode
 	; ruby
 	enh-ruby-mode ;flymake-ruby 
         ruby-block ruby-end ruby-electric

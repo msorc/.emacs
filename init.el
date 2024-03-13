@@ -27,12 +27,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(delete-selection-mode nil)
+ '(go-ts-mode-indent-offset 2)
  '(graphviz-dot-view-command "xdot %s")
  '(haskell-mode-hook
    '(turn-on-haskell-indentation turn-on-haskell-doc-mode interactive-haskell-mode) t)
  '(org-startup-truncated nil)
- '(package-selected-packages
-   '(dylan d-mode hyperbole company haxe-mode e2ansi reverse-im clojure-cheatsheet queue))
+ '(package-selected-packages '(company haxe-mode e2ansi reverse-im clojure-cheatsheet))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
