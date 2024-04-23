@@ -24,9 +24,11 @@
         markdown-mode
 	; text navigation
 	ace-jump-mode
-        ido-vertical-mode
-        ido-hacks
-        ido-ubiquitous
+        ;; ido-vertical-mode
+        ;; ido-hacks
+        ;; ido-ubiquitous
+
+        which-key
         ; undo/redo history
         undo-tree
 	; autocomplete
@@ -35,12 +37,15 @@
 	; file system
 	sunrise-commander
         ;; lsp
-        ;; lsp-mode
+        lsp-mode
+        lsp-ui
+        lsp-treemacs
         ;; interface
         kpm-list
         ;; design
         graphviz-dot-mode
 	;; programming
+        treesit-auto
         dumb-jump
         projectile      ; project organising
 	; css-mode ;nxhtml ; html & css
@@ -54,9 +59,9 @@
         ;; ; fsharp
         ;; fsharp-mode
         ; ocaml
-        ocaml-ts-mode
+        ;; ocaml-ts-mode
         ; go
-        ;go-ts-mode
+        ;; go-ts-mode
         ; d
         d-mode
 	; ruby
@@ -66,7 +71,7 @@
 	rvm
 	; rails
         ; scheme
-        geiser
+        ;; geiser
         ;rinari 
         rhtml-mode haml-mode sass-mode slim-mode
 	feature-mode 	; cucumber

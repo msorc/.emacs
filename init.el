@@ -27,12 +27,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(delete-selection-mode nil)
- '(go-ts-mode-indent-offset 2)
  '(graphviz-dot-view-command "xdot %s")
  '(haskell-mode-hook
    '(turn-on-haskell-indentation turn-on-haskell-doc-mode interactive-haskell-mode) t)
  '(org-startup-truncated nil)
- '(package-selected-packages '(company haxe-mode e2ansi reverse-im clojure-cheatsheet))
+ '(package-selected-packages
+   '(treesit-auto company haxe-mode e2ansi reverse-im clojure-cheatsheet))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -44,6 +44,4 @@
  '(cursor ((t (:background "gainsboro" :foreground "blue")))))
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
-;; ## added by OPAM user-setup for emacs / base ## 56ab50dc8996d2bb95e7856a6eddb17b ## you can edit, but keep this line
-(require 'opam-user-setup "~/.emacs.d/opam-user-setup.el")
-;; ## end of OPAM user-setup addition for emacs / base ## keep this line
+
