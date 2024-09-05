@@ -24,9 +24,9 @@
         markdown-mode
 	; text navigation
 	ace-jump-mode
-        ;; ido-vertical-mode
-        ;; ido-hacks
-        ;; ido-ubiquitous
+        ido-vertical-mode
+        ido-hacks
+        ido-ubiquitous
 
         which-key
         ; undo/redo history

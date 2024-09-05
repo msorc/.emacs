@@ -12,7 +12,9 @@
       icomplete-hide-common-prefix nil)
 
 ;; vertical completion with fido-vertical
-(fido-vertical-mode 1)
+;; (fido-vertical-mode 1)
+
+(ido-mode t)
 
 ;; winner-mode
 ; Ctrl+c ←  - will restore the previous window configuration
