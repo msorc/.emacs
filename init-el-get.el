@@ -11,7 +11,12 @@
     (eval-print-last-sexp)))
 
 (require 'el-get-elpa)
+
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
+(unless (file-directory-p el-get-recipe-path-elpa)
+  (el-get-elpa-build-local-recipes))
 
 ; Packages
 (setq my-packages
