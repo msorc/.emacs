@@ -1,7 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d/custom-packages")
-(require 'gambit)
+;; (require 'gambit)
 
-(require 'colm-mode)
+;; (require 'colm-mode)
 
 ;; (add-to-list 'load-path "~/.emacs.d/custom-packages/emacs-treadmill")
 ;; (require 'treadmill) ; will not be required with MELPA package
